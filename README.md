@@ -103,7 +103,7 @@ MIT License
 
 ## Links
 
-- Blog post: [www.tanchunsiong.com](https://www.tanchunsiong.com)
+- Blog post: [Confero: Building a Vehicle Telematics System for Eco-Driving](https://www.tanchunsiong.com/2009/06/confero-building-a-vehicle-telematics-system-for-eco-driving/)
 - GitHub: [@tanchunsiong](https://github.com/tanchunsiong)
 - LinkedIn: [tanchunsiong](https://www.linkedin.com/in/tanchunsiong)
 - X/Twitter: [@tanchunsiong](https://x.com/tanchunsiong)
