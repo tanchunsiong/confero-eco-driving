@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/web_admin/User/Home.aspx" title="Summary"  description="Summary for table.">
+	
+    <siteMapNode title="Propellent Info">
+      <siteMapNode title="Propellent" description="Propellent Information" >
+        <siteMapNode url="~/web_admin/Propellent/View_Propellent.aspx" title="View All Propellent Info"  description="View all propellent info." />
+        <siteMapNode url="~/web_admin/Propellent/Add_Propellent.aspx?for=add" title="Add a Propellent"  description="Add a new propellent." />
+      </siteMapNode>
+      <siteMapNode title="Propellent Type" description="Propellent Information" >
+        <siteMapNode url="~/web_admin/Propellent/View_PropellentType.aspx" title="View All Propellent Type Info"  description="View all propellent type info." />
+        <siteMapNode url="~/web_admin/Propellent/Add_Propellent_Type.aspx?for=add" title="Add a Propellent Type"  description="Add a new propellent type." />
+      </siteMapNode>	
+		</siteMapNode>
+    
+		<siteMapNode title="Trip Info"  description="">
+      <siteMapNode url="~/web_admin/Trip/View_Trip.aspx" title="View All Trip Info"  description="View all trip info." />
+        <!--<siteMapNode url="~/Trip/Add_Trip.aspx" title="Add a Trip"  description="Add a new trip." />-->
+    </siteMapNode>
+      
+		<siteMapNode title="User Info"  description="">
+      <siteMapNode url="~/web_admin/User/Update_Profile.aspx" title="My Profile" description="My Profile" />
+      <siteMapNode title="Users" description="Users Information" >     
+        <siteMapNode url="~/web_admin/User/View_User.aspx" title="View All User Info"  description="View all user info." />
+        <siteMapNode url="~/web_admin/User/Add_User.aspx?for=add" title="Add an User"  description="Add an user account." />
+      </siteMapNode>
+      <siteMapNode title="Users Generated Info" description="Users Generated Information" >
+        <siteMapNode url="~/web_admin/User/View_User_Generated.aspx" title="View All User Generated Info"  description="View all user generated info." />
+        <!--<siteMapNode url="~/web_admin/User/Add_User_Generated.aspx?for=add" title="Add an Users Generated Information"  description="Add an users generated information." />-->
+      </siteMapNode>
+		</siteMapNode>
+
+    <siteMapNode title="Vehicle Info"  description="">
+      <siteMapNode title="Vehicle" description="Vehicle Information" >
+        <siteMapNode url="~/web_admin/Vehicle/View_Vehicle.aspx" title="View All Vehicle Info"  description="View all vehicle info." />
+        <!--<siteMapNode url="~/Vehicle/Add_Vehicle.aspx" title="Add a Vehicle"  description="Add an vehicle." />-->
+      </siteMapNode>
+      <siteMapNode title="Vehicle Configuration" description="Vehicle Configuration Information" >
+        <siteMapNode url="~/web_admin/Vehicle/View_Vehicle_Configuration.aspx" title="View All Vehicle Configuration Info"  description="View all vehicle configuration info." />
+        <!--<siteMapNode url="~/Vehicle/Add_Vehicle_Configuration.aspx" title="Add a Vehicle Configuration"  description="Add an vehicle configuration." />-->
+      </siteMapNode>
+      <siteMapNode title="Vehicle Ownership" description="Vehicle Ownership Information" >
+        <siteMapNode url="~/web_admin/Vehicle/View_Vehicle_Ownership.aspx" title="View All Vehicle Ownership Info"  description="View all vehicle ownership info." />
+        <siteMapNode url="~/web_admin/Vehicle/Add_Vehicle_Ownership.aspx?for=add" title="Add a Vehicle Ownership"  description="Add an vehicle ownership." />
+      </siteMapNode>
+      <siteMapNode title="Vehicle Type" description="Vehicle Type Information" >
+        <siteMapNode url="~/web_admin/Vehicle/View_Vehicle_Type.aspx" title="View All Vehicle Type Info"  description="View all vehicle type info." />
+        <siteMapNode url="~/web_admin/Vehicle/Add_Vehicle_Type.aspx?for=add" title="Add a Vehicle Type"  description="Add an vehicle type." />
+      </siteMapNode>
+    </siteMapNode>
+    
+    <siteMapNode title="Tyre Info"  description="">
+      <siteMapNode title="Tyre" description="Tyre Information" >
+        <siteMapNode url="~/web_admin/Tyre/View_Tyre.aspx" title="View All Tyre Info"  description="View all tyre info." />
+        <siteMapNode url="~/web_admin/Tyre/Add_Tyre.aspx?for=add" title="Add a Tyre"  description="Add a tyre." />
+      </siteMapNode>
+		</siteMapNode>
+
+    <siteMapNode  title="Setting" description= "Manage Setting.">
+      <siteMapNode url="~/web_admin/Setting/Setting.aspx" title="Login Security"  description="Login security" />
+      <siteMapNode url="~/web_admin/Setting/UploadFile.aspx" title="Upload File"  description="Upload pdf and flv file" />
+      <siteMapNode url="~/web_admin/Setting/ManageGallery.aspx" title="Manage Gallery"  description="Manage flash gallery" />
+    </siteMapNode>
+
+    <siteMapNode url="~/web_admin/User/Change_Password.aspx"  title="Change Password" description="Change Password.">
+    </siteMapNode>
+
+    <siteMapNode url="Session.aspx"  title="Logout">
+    </siteMapNode>
+    
+	</siteMapNode>
+</siteMap>

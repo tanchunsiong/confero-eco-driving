@@ -1,0 +1,157 @@
+	<Canvas x:Name="canSpeedometer1" Canvas.Left="18" Canvas.Top="122" Margin="434.405,103,302.691,180" Visibility="Visible">
+   		<Canvas x:Name="canContainer" Width="284" Height="284" Canvas.Top="3">
+   			<Ellipse Width="284" Height="284" Fill="#FFC4C4C4" Stroke="#FF5E5F5A"/>
+   			<Ellipse Width="284" Height="279" Fill="#FFFFFFFF" Stroke="#FFC4C4C4"/>
+   			<Ellipse Width="263" Height="263" Canvas.Left="11.108" Canvas.Top="11">
+   				<Ellipse.Fill>
+   					<LinearGradientBrush EndPoint="0.501,0.989" StartPoint="0.494,0.004">
+   						<GradientStop Color="#FFBBBBBB" Offset="0"/>
+   						<GradientStop Color="#FFFFFFFF" Offset="1"/>
+   					</LinearGradientBrush>
+   				</Ellipse.Fill>
+   			</Ellipse>
+   			<Ellipse Width="253" Height="253" Canvas.Left="16.108" Canvas.Top="17">
+   				<Ellipse.Fill>
+   					<RadialGradientBrush GradientOrigin="0.49,0.565">
+   						<RadialGradientBrush.RelativeTransform>
+   							<TransformGroup>
+   								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.43" ScaleY="1.43"/>
+   								<SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+   								<RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+   								<TranslateTransform X="0.004" Y="0.087"/>
+   							</TransformGroup>
+   						</RadialGradientBrush.RelativeTransform>
+   						<GradientStop Color="#FFE5E1E1" Offset="0.995"/>
+   						<GradientStop Color="#FFFFFFFF" Offset="0"/>
+   					</RadialGradientBrush>
+   				</Ellipse.Fill>
+   			</Ellipse>
+   			<Ellipse x:Name="greyBorder" Width="223" Height="223" Canvas.Left="33" Canvas.Top="34">
+   				<Ellipse.Stroke>
+   					<LinearGradientBrush EndPoint="0.511,1" StartPoint="0.497,0.013">
+   						<GradientStop Color="#FF9E9999" Offset="0"/>
+   						<GradientStop Color="#FFE7E3E3" Offset="1"/>
+   					</LinearGradientBrush>
+   				</Ellipse.Stroke>
+   			</Ellipse>
+   		</Canvas>
+   		<Canvas x:Name="canDial" Width="63.127" Height="157.13" Canvas.Left="110.874" Canvas.Top="19.373" RenderTransformOrigin="0.525,0.796">
+   			<Canvas.RenderTransform>
+   				<TransformGroup>
+   					<ScaleTransform ScaleX="1" ScaleY="1"/>
+   					<SkewTransform AngleX="0" AngleY="0"/>
+   					<RotateTransform Angle="-103.565"/>
+   					<TranslateTransform X="0" Y="0"/>
+   				</TransformGroup>
+   			</Canvas.RenderTransform>
+   			<Path RenderTransformOrigin="0.5,0.5" Width="18" Height="84.591" Stretch="Fill" Data="M0.5,0.5 L17.5,0.5 9,187 z" Canvas.Top="21.155" Canvas.Left="3.543">
+   				<Path.RenderTransform>
+   					<TransformGroup>
+   						<ScaleTransform ScaleX="1" ScaleY="1"/>
+   						<SkewTransform AngleX="0" AngleY="0"/>
+   						<RotateTransform Angle="160.99"/>
+   						<TranslateTransform X="0" Y="0"/>
+   					</TransformGroup>
+   				</Path.RenderTransform>
+   				<Path.Fill>
+   					<RadialGradientBrush GradientOrigin="0.458,0.633">
+   						<RadialGradientBrush.RelativeTransform>
+   							<TransformGroup>
+   								<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.337" ScaleY="1.337"/>
+   								<SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+   								<RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+   								<TranslateTransform X="0" Y="0"/>
+   							</TransformGroup>
+   						</RadialGradientBrush.RelativeTransform>
+   						<GradientStop Color="#FFB7322B" Offset="1"/>
+   						<GradientStop Color="#FFF39E99" Offset="0"/>
+   						<GradientStop Color="#FFB7322B" Offset="0.596"/>
+   					</RadialGradientBrush>
+   				</Path.Fill>
+   			</Path>
+   			<Canvas Opacity="1" x:Name="canCenter" Width="56" Height="57" Canvas.Left="7.127" Canvas.Top="100.13">
+   				<Ellipse x:Name="centerDot" Width="56" Height="57" Stroke="#FFE1E1E1" StrokeThickness="4">
+   					<Ellipse.Fill>
+   						<RadialGradientBrush>
+   							<RadialGradientBrush.RelativeTransform>
+   								<TransformGroup>
+   									<ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.971" ScaleY="1.971"/>
+   									<SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+   									<RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+   									<TranslateTransform X="-0.036" Y="-0.178"/>
+   								</TransformGroup>
+   							</RadialGradientBrush.RelativeTransform>
+   							<GradientStop Color="#FFC7C7C7" Offset="0.721"/>
+   							<GradientStop Color="#FFF7F7F7" Offset="0"/>
+   						</RadialGradientBrush>
+   					</Ellipse.Fill>
+   				</Ellipse>
+   				<Canvas Opacity="0.255" Width="15.418" Height="18.948" Canvas.Left="20" Canvas.Top="19">
+   					<Rectangle RenderTransformOrigin="0.5,0.5" Width="5.709" Height="7.474" Fill="#FF868686">
+   						<Rectangle.RenderTransform>
+   							<TransformGroup>
+   								<ScaleTransform ScaleX="1" ScaleY="1"/>
+   								<SkewTransform AngleX="0" AngleY="0"/>
+   								<RotateTransform Angle="0"/>
+   								<TranslateTransform X="0" Y="0"/>
+   							</TransformGroup>
+   						</Rectangle.RenderTransform>
+   					</Rectangle>
+   					<Rectangle RenderTransformOrigin="0.5,0.5" Width="5.709" Height="7.474" Fill="#FF868686" Canvas.Left="9.709">
+   						<Rectangle.RenderTransform>
+   							<TransformGroup>
+   								<ScaleTransform ScaleX="1" ScaleY="1"/>
+   								<SkewTransform AngleX="0" AngleY="0"/>
+   								<RotateTransform Angle="0"/>
+   								<TranslateTransform X="0" Y="0"/>
+   							</TransformGroup>
+   						</Rectangle.RenderTransform>
+   					</Rectangle>
+   					<Rectangle RenderTransformOrigin="0.5,0.5" Width="5.709" Height="7.474" Fill="#FF868686" Canvas.Top="11.474">
+   						<Rectangle.RenderTransform>
+   							<TransformGroup>
+   								<ScaleTransform ScaleX="1" ScaleY="1"/>
+   								<SkewTransform AngleX="0" AngleY="0"/>
+   								<RotateTransform Angle="0"/>
+   								<TranslateTransform X="0" Y="0"/>
+   							</TransformGroup>
+   						</Rectangle.RenderTransform>
+   					</Rectangle>
+   					<Rectangle RenderTransformOrigin="0.5,0.5" Width="5.709" Height="7.474" Fill="#FF868686" Canvas.Left="9.709" Canvas.Top="11.474">
+   						<Rectangle.RenderTransform>
+   							<TransformGroup>
+   								<ScaleTransform ScaleX="1" ScaleY="1"/>
+   								<SkewTransform AngleX="0" AngleY="0"/>
+   								<RotateTransform Angle="0"/>
+   								<TranslateTransform X="0" Y="0"/>
+   							</TransformGroup>
+   						</Rectangle.RenderTransform>
+   					</Rectangle>
+   				</Canvas>
+   			</Canvas>
+   		</Canvas>
+   		<Canvas x:Name="canMarkers" Width="258.127" Height="166.526" Canvas.Left="35.873" Canvas.Top="32">
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="0" TextWrapping="Wrap" Canvas.Top="167.999" Canvas.Left="3.836"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="10" TextWrapping="Wrap" Canvas.Top="150" Canvas.Left="-12.166"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="20" TextWrapping="Wrap" Canvas.Top="130" Canvas.Left="-16.499"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="30" TextWrapping="Wrap" Canvas.Top="110" Canvas.Left="-18.999"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="40" TextWrapping="Wrap" Canvas.Top="89.5" Canvas.Left="-16.498"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="50" TextWrapping="Wrap" Canvas.Top="70.168" Canvas.Left="-12.664"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="60" TextWrapping="Wrap" Canvas.Top="51.669" Canvas.Left="-4.664"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="70" TextWrapping="Wrap" Canvas.Top="33.003" Canvas.Left="8.17"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="80" TextWrapping="Wrap" Canvas.Top="16.67" Canvas.Left="24.17"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="90" TextWrapping="Wrap" Canvas.Left="40.503" Canvas.Top="5.671"/>
+   			<TextBlock Width="73" Height="77.526" FontSize="12" Text="100" TextWrapping="Wrap" Canvas.Left="57.002" Canvas.Top="-3.663"/>
+   		</Canvas>
+   		<Path Opacity="0.68" x:Name="pthReflection" Width="243.049" Height="123.526" Stretch="Fill" Data="M243,121.5 C242.892,125.99962 192.9946,104 125.892,104 58.789403,104 -1.108,130.99961 0,121.5 7.773907,54.849232 54.397403,0 121.5,0 188.6026,0 244.61014,54.416723 243,121.5 z" Canvas.Left="20.108" Canvas.Top="26">
+   			<Path.Fill>
+   				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+   					<GradientStop Color="#FFF8F8F8" Offset="0"/>
+   					<GradientStop Color="#911C1C1C" Offset="0.645"/>
+   					<GradientStop Color="#FF909090" Offset="0.377"/>
+   				</LinearGradientBrush>
+   			</Path.Fill>
+   		</Path>
+   		<Label x:Name="lblEfficiency" FontFamily="Cooper" FontSize="20" Width="739" Height="173.5" Content="0 MPG" Canvas.Top="208" Canvas.Left="104.5"/>
+   		<Ellipse Width="206.7" Fill="#FF000000" Stroke="#FF000000" Height="3" Canvas.Top="288.45" Canvas.Left="41.864"/>
+   	</Canvas>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CWeatherWatch">
+</Property><Property Name="Solution File" Value="H:\CWeatherWatch\CWeatherWatch\CWeatherWatch.sln">
+</Property><Property Name="User Options File" Value="H:\CWeatherWatch\CWeatherWatch\CWeatherWatch.suo">
+</Property><Property Name="Date" Value="Monday, 11 August, 2008">
+</Property><Property Name="Time" Value="19:15 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="CWeatherWatch.sln" Description="File successfully backed up as H:\CWeatherWatch\CWeatherWatch\Backup\CWeatherWatch.sln">
+</Event><Event ErrorLevel="0" Project="" Source="CWeatherWatch.suo" Description="File successfully backed up as H:\CWeatherWatch\CWeatherWatch\Backup\CWeatherWatch.suo">
+</Event><Event ErrorLevel="2" Project="CWeatherWatch" Source="CWeatherWatch\CWeatherWatch.csproj" Description="Unable to open project file to perform upgrade.  ">
+</Event><Event ErrorLevel="0" Project="" Source="CWeatherWatch.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CWeatherWatch.sln" Description="Converted">
+</Event></UpgradeLog>

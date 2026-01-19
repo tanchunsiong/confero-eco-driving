@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<photos path="Photos/">
+  <object name="Montage0" url="Montage0.jpg" />
+  <object name="Montage1" url="Montage1.jpg" />
+  <object name="Montage2" url="Montage2.jpg" />
+  <object name="Montage3" url="Montage3.jpg" />
+  <object name="Montage4" url="Montage4.jpg" />
+  <object name="Montage5" url="Montage5.jpg" />
+  <object name="Montage6" url="Montage6.jpg" />
+  <object name="Montage6a" url="Montage6a.jpg" />
+  <object name="Montage7" url="Montage7.jpg" />
+  <object name="Montage8" url="Montage8.jpg" />
+  <object name="Montage9" url="Montage9.jpg" />
+  <object name="Montage10" url="Montage10.jpg" />
+  <object name="Montage11" url="Montage11.jpg" />
+</photos>

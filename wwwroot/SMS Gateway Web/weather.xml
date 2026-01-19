@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<CurrentWeather>
+  <Location>Singapore / Changi Airport, Singapore (WSSS) 01-22N 103-59E 16M</Location>
+  <Time>Aug 11, 2008 - 03:30 AM EDT / 2008.08.11 0730 UTC</Time>
+  <Wind> from the SSE (150 degrees) at 6 MPH (5 KT) (direction variable):0</Wind>
+  <Visibility> greater than 7 mile(s):0</Visibility>
+  <SkyConditions> mostly cloudy</SkyConditions>
+  <Temperature> 87 F (31 C)</Temperature>
+  <DewPoint> 77 F (25 C)</DewPoint>
+  <RelativeHumidity> 70%</RelativeHumidity>
+  <Pressure> 29.74 in. Hg (1007 hPa)</Pressure>
+  <Status>Success</Status>
+</CurrentWeather>

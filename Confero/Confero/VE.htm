@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Maps JavaScript API Example</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAyZHQwrqCXF2OlwpHBvTgSRRaLm4alWn6zMlO91AXZZRl0YQ4sBTMzWkvQ9RBqUh3gnb0U7VOVyAC2g"
+      type="text/javascript"></script>
+    <script type="text/javascript">
+ 
+    var map = null;
+    var gdir;
+    var geocoder = null;
+    var addressMarker;
+    var toggleW=0;
+    var ConferoweatherOverlay;
+    var ConferotrafficOverlay;
+    var gmTrafficOverlay;
+
+    function getRoute(fromAddress, toAddress) {
+   
+    gdir = new GDirections(map, document.getElementById("directions"));
+
+     GEvent.addListener(gdir, "load", onGDirectionsLoad);
+     GEvent.addListener(gdir, "error", handleErrors);
+     gdir.load("from: " + fromAddress + " to: " + toAddress,
+                { "locale": "en_US" });
+  
+
+    }
+
+
+    function showTraffic(){
+
+        var pointSW = new GLatLng(1.160352,103.603134)
+        var pointNE = new GLatLng(1.474065,104.121552);
+       ConferotrafficOverlay = new GGroundOverlay("http://192.168.233.128/finalimage.png", new GLatLngBounds(pointSW, pointNE));
+       gmTrafficOverlay = new GTrafficOverlay();
+        map.addOverlay(ConferotrafficOverlay);
+      map.addOverlay(gmTrafficOverlay);
+    }    
+    
+     function hideTraffic() {
+     
+    
+          map.removeOverlay(ConferotrafficOverlay); 
+        
+     
+     map.removeOverlay(gmTrafficOverlay);
+    }
+    
+      function showWeather() {
+    
+        var pointSW = new GLatLng(1.223509,103.61618);
+        var pointNE = new GLatLng(1.495687,104.084816);
+
+     ConferoweatherOverlay = new GGroundOverlay("http://192.168.233.128/weather.png", new GLatLngBounds(pointSW, pointNE));
+        map.addOverlay(ConferoweatherOverlay);
+       
+    }
+    
+    function hideWeather() {
+        map.removeOverlay(ConferoweatherOverlay);
+    }
+    
+     function addMarker(lat,longti,description, value)
+    {
+  
+                // Create a base icon for all of our markers that specifies the
+                // shadow, icon dimensions, etc.
+                var baseIcon = new GIcon();
+                baseIcon.shadow = "http://www.google.com/mapfiles/shadow50.png";
+                baseIcon.iconSize = new GSize(20, 34);
+                baseIcon.shadowSize = new GSize(37, 34);
+                baseIcon.iconAnchor = new GPoint(9, 34);
+                baseIcon.infoWindowAnchor = new GPoint(9, 2);
+                baseIcon.infoShadowAnchor = new GPoint(18, 25);
+
+                // Creates a marker whose info window displays the letter corresponding
+                // to the given index.
+                
+                function createMarker(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                //  var letter = String.fromCharCode("A".charCodeAt(0) + index);
+                  var letteredIcon = new GIcon(baseIcon);
+                  letteredIcon.image = "A.jpg";
+                  
+                  // Set up our GMarkerOptions object
+                  markerOptions = { icon:letteredIcon };
+                  var marker = new GMarker(point, markerOptions);
+
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml(description + " " + value);
+                  });
+                  return marker;
+                }
+
+                var latlng = new GLatLng(lat,longti);
+                map.addOverlay(createMarker(latlng));                                      
+    }
+    
+     function clearoverlay() {
+       
+    }
+    
+    function handleErrors(){
+	   if (gdir.getStatus().code == G_GEO_UNKNOWN_ADDRESS)
+	     alert("No corresponding geographic location could be found for one of the specified addresses. This may be due to the fact that the address is relatively new, or it may be incorrect.\nError code: " + gdir.getStatus().code);
+	   else if (gdir.getStatus().code == G_GEO_SERVER_ERROR)
+	     alert("A geocoding or directions request could not be successfully processed, yet the exact reason for the failure is not known.\n Error code: " + gdir.getStatus().code);
+	   
+	   else if (gdir.getStatus().code == G_GEO_MISSING_QUERY)
+	     alert("The HTTP q parameter was either missing or had no value. For geocoder requests, this means that an empty address was specified as input. For directions requests, this means that no query was specified in the input.\n Error code: " + gdir.getStatus().code);
+
+	//   else if (gdir.getStatus().code == G_UNAVAILABLE_ADDRESS)  <--- Doc bug... this is either not defined, or Doc is wrong
+	//     alert("The geocode for the given address or the route for the given directions query cannot be returned due to legal or contractual reasons.\n Error code: " + gdir.getStatus().code);
+	     
+	   else if (gdir.getStatus().code == G_GEO_BAD_KEY)
+	     alert("The given key is either invalid or does not match the domain for which it was given. \n Error code: " + gdir.getStatus().code);
+
+	   else if (gdir.getStatus().code == G_GEO_BAD_REQUEST)
+	     alert("A directions request could not be successfully parsed.\n Error code: " + gdir.getStatus().code);
+	    
+	   else alert("An unknown error occurred.");
+	   
+	}
+
+    function GetMap() {
+      if (GBrowserIsCompatible()) {
+      var pointCenter = new GLatLng(1.445922,103.976669);
+      map = new GMap2(document.getElementById("map"));
+      map.setCenter(pointCenter, 11);
+      map.addControl(new GLargeMapControl);
+      map.addControl(new GMapTypeControl);
+      }
+    }
+    
+     function DoCenterZoom(lat,lon,zoom)      
+        {       
+     map.setCenter(new GLatLng(lat,lon), zoom);
+           
+        }// DoCenterZoom
+
+ function Resize(width, height)
+        {
+            map.Resize(width, height);
+        }// Resize       
+
+function onGDirectionsLoad(){ 
+      // Use this function to access information about the latest load()
+      // results.
+
+      // e.g.
+      // document.getElementById("getStatus").innerHTML = gdir.getStatus().code;
+	  // and yada yada yada...
+	}
+    </script>
+    <style type="text/css">
+        #TextArea1
+        {
+            height: 132px;
+            width: 243px;
+        }
+        #directions
+        {
+            height: 285px;
+        }
+    </style>
+  </head>
+  <body onload="GetMap()" onunload="GUnload()" bgcolor="Black">
+  <table style="width: 100%; height: 100%;" border="0" cellpadding="0" cellspacing="0" bgcolor="DimGray">
+          <tr>
+              <td>
+              
+                <textarea id="directions" cols="20" name="S1" 
+                      style="width : 300px; height:400px"></textarea></td>
+              <td align="right">
+                
+                <div id="map" style="width: 550px; height: 400px;"></div>
+              </td>
+          </tr>
+          </table> 
+  </body>
+</html>

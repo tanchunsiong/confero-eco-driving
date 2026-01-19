@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Web_Admin/Admin.aspx" title="Home"  description="Administrator Home">
+
+    <siteMapNode url="~/Web_Admin/ManageUsers.aspx" title="User Management" description="User Management">
+    </siteMapNode>
+
+    <siteMapNode url="~/Web_Admin/health.aspx"  title="System Health" description="System Health">
+    </siteMapNode>
+
+    <siteMapNode url="~/Web_Admin/adminreport.aspx"  title="Message Report" description= "Message Report">
+    </siteMapNode>
+    
+    <siteMapNode url="Session.aspx"  title="Logout">
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

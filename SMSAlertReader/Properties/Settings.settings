@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SMSAlertReader.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SMSAlertReader_WebReference_Service1" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.233.128:8080/service1.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

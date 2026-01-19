@@ -1,0 +1,65 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Confero - Environment Solution</title>
+    <link href="App_Themes/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+          <table background="../../Image/Banner.png" width="970px" align="center">
+              <tr>
+                  <td rowspan="3" style="width: 148px" >
+                      <asp:ImageButton ID="btnHome" runat="server" Height="180px" ImageUrl="~/Image/blank.png" />
+                      </td>
+                  <td rowspan="2" align="right">
+                      <asp:Image ID="imgWeather" runat="server" Height="76px" Width="84px" /><br />
+                      <asp:Label ID="lblWeather" runat="server"></asp:Label></td>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
+                  <td align="right" valign="bottom">
+                     <%--for the path root you located--%>
+                    <asp:SiteMapPath ID="SiteMapPath1" SiteMapProvider="Menu1Sitemap" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : " RenderCurrentNodeAsLink="True">
+                      <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                      <CurrentNodeStyle ForeColor="#333333" />
+                      <NodeStyle Font-Bold="True" ForeColor="#990000" />
+                      <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                    </asp:SiteMapPath>
+                  </td>
+              </tr>
+          </table>   
+          
+          <table width="970px" align="center">
+             <tr>
+                  <td background="../../Image/menu_bg.png" colspan="2">
+                      <asp:Menu id="Menu1" runat="server" Font-Size="Small" Font-Names="Verdana" StaticSubMenuIndent="10px" StaticDisplayLevels="2" Orientation="Horizontal" ForeColor="#666666" DynamicHorizontalOffset="2" BackColor="#E3EAEB" DataSourceID="SiteMapDataSource1">
+                      <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"  />
+                      <DynamicHoverStyle BackColor="#666666" ForeColor="White"  />
+                      <DynamicMenuStyle BackColor="#E3EAEB"  />
+                      <StaticSelectedStyle BackColor="#F9F9BB"  />
+                      <DynamicSelectedStyle BackColor="#F9F9BB"  />
+                      <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"  />
+                      <StaticHoverStyle BackColor="#666666" ForeColor="White"  />
+                    </asp:Menu>
+                    </td>
+              </tr>
+          </table> 
+
+       
+ 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+ 
+
+    
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="Menu1Sitemap" />
+        <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" SiteMapProvider="Menu2Sitemap" />
+
+    </form>
+</body>
+</html>

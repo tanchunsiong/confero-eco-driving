@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/web_user/User/Home.aspx" title="Summary"  description="Summary for table.">
+
+    <siteMapNode title="Propellent Info">
+      <siteMapNode title="Propellent" description="Propellent Information" >
+        <siteMapNode url="~/web_user/Propellent/View_Propellent.aspx" title="View All Propellent Info"  description="View all propellent info." />
+      </siteMapNode>
+    </siteMapNode>
+    
+    <siteMapNode title="Trip Info"  description="">
+      <siteMapNode url="~/web_user/Trip/View_Trip.aspx" title="View All Trip Info"  description="View all trip info." />
+      <!--<siteMapNode url="~/Trip/Add_Trip.aspx" title="Add a Trip"  description="Add a new trip." />-->
+    </siteMapNode>
+
+    <siteMapNode title="User Info"  description="">
+      <siteMapNode url="~/web_user/User/Update_Profile.aspx"  title="My Profile" description="My Profile" />
+      <siteMapNode title="Users Generated Info" description="Users Generated Information" >      
+          <siteMapNode url="~/web_user/User/View_User_Generated.aspx" title="View All User Generated Info"  description="View all user generated info." />
+          <!--<siteMapNode url="~/web_user/User/Add_User_Generated.aspx?for=add" title="Add an Users Generated Information"  description="Add an users generated information." />-->
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Vehicle Info"  description="">
+      <siteMapNode title="Vehicle" description="Vehicle Information" >
+        <siteMapNode url="~/web_user/Vehicle/View_Vehicle.aspx" title="View All Vehicle Info"  description="View all vehicle info." />
+        <!--<siteMapNode url="~/Vehicle/Add_Vehicle.aspx" title="Add a Vehicle"  description="Add an vehicle." />-->
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Tyre Info"  description="">
+      <siteMapNode title="Tyre" description="Tyre Information" >
+        <siteMapNode url="~/web_user/Tyre/View_Tyre.aspx" title="View All Tyre Info"  description="View all tyre info." />    
+      </siteMapNode>
+    </siteMapNode>
+
+    
+    <siteMapNode url="~/web_user/User/Change_Password.aspx"  title="Change Password" description="Change password">
+    </siteMapNode>
+
+    <siteMapNode url="Session.aspx"  title="Logout">
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

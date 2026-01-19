@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CONFEROCLIENTDataSetView" targetNamespace="http://tempuri.org/CONFEROCLIENTDataSetView.xsd" xmlns:mstns="http://tempuri.org/CONFEROCLIENTDataSetView.xsd" xmlns="http://tempuri.org/CONFEROCLIENTDataSetView.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CONFEROCLIENTConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CONFEROCLIENTConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Configuration.Properties.Settings.GlobalReference.Default.CONFEROCLIENTConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="viewCurrentConfigurationTableAdapter" GeneratorDataComponentClassName="viewCurrentConfigurationTableAdapter" Name="viewCurrentConfiguration" UserDataComponentName="viewCurrentConfigurationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CONFEROCLIENTConnectionString (Settings)" DbObjectName="CONFEROCLIENT.dbo.viewCurrentConfiguration" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        vehicleConfigurationID, model, make, capacity, year, VehicleDescription, TyreBrand, width, size, material, rollingresistance, octane, PropellentBrand, 
+                         PropellentDescription, TyreModel, tyretype
+FROM            viewCurrentConfiguration</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="vehicleConfigurationID" DataSetColumn="vehicleConfigurationID" />
+              <Mapping SourceColumn="model" DataSetColumn="model" />
+              <Mapping SourceColumn="make" DataSetColumn="make" />
+              <Mapping SourceColumn="capacity" DataSetColumn="capacity" />
+              <Mapping SourceColumn="year" DataSetColumn="year" />
+              <Mapping SourceColumn="VehicleDescription" DataSetColumn="VehicleDescription" />
+              <Mapping SourceColumn="TyreBrand" DataSetColumn="TyreBrand" />
+              <Mapping SourceColumn="width" DataSetColumn="width" />
+              <Mapping SourceColumn="size" DataSetColumn="size" />
+              <Mapping SourceColumn="material" DataSetColumn="material" />
+              <Mapping SourceColumn="rollingresistance" DataSetColumn="rollingresistance" />
+              <Mapping SourceColumn="octane" DataSetColumn="octane" />
+              <Mapping SourceColumn="PropellentBrand" DataSetColumn="PropellentBrand" />
+              <Mapping SourceColumn="PropellentDescription" DataSetColumn="PropellentDescription" />
+              <Mapping SourceColumn="TyreModel" DataSetColumn="TyreModel" />
+              <Mapping SourceColumn="tyretype" DataSetColumn="tyretype" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CONFEROCLIENTDataSetView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CONFEROCLIENTDataSetView" msprop:Generator_DataSetName="CONFEROCLIENTDataSetView" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viewCurrentConfiguration" msprop:Generator_UserTableName="viewCurrentConfiguration" msprop:Generator_RowDeletedName="viewCurrentConfigurationRowDeleted" msprop:Generator_RowChangedName="viewCurrentConfigurationRowChanged" msprop:Generator_RowClassName="viewCurrentConfigurationRow" msprop:Generator_RowChangingName="viewCurrentConfigurationRowChanging" msprop:Generator_RowEvArgName="viewCurrentConfigurationRowChangeEvent" msprop:Generator_RowEvHandlerName="viewCurrentConfigurationRowChangeEventHandler" msprop:Generator_TableClassName="viewCurrentConfigurationDataTable" msprop:Generator_TableVarName="tableviewCurrentConfiguration" msprop:Generator_RowDeletingName="viewCurrentConfigurationRowDeleting" msprop:Generator_TablePropName="viewCurrentConfiguration">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="vehicleConfigurationID" msprop:Generator_UserColumnName="vehicleConfigurationID" msprop:Generator_ColumnPropNameInRow="vehicleConfigurationID" msprop:Generator_ColumnVarNameInTable="columnvehicleConfigurationID" msprop:Generator_ColumnPropNameInTable="vehicleConfigurationIDColumn" type="xs:int" />
+              <xs:element name="model" msprop:Generator_UserColumnName="model" msprop:Generator_ColumnPropNameInRow="model" msprop:Generator_ColumnVarNameInTable="columnmodel" msprop:Generator_ColumnPropNameInTable="modelColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="make" msprop:Generator_UserColumnName="make" msprop:Generator_ColumnPropNameInRow="make" msprop:Generator_ColumnVarNameInTable="columnmake" msprop:Generator_ColumnPropNameInTable="makeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="capacity" msprop:Generator_UserColumnName="capacity" msprop:Generator_ColumnPropNameInRow="capacity" msprop:Generator_ColumnVarNameInTable="columncapacity" msprop:Generator_ColumnPropNameInTable="capacityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="year" msprop:Generator_UserColumnName="year" msprop:Generator_ColumnPropNameInRow="year" msprop:Generator_ColumnVarNameInTable="columnyear" msprop:Generator_ColumnPropNameInTable="yearColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VehicleDescription" msprop:Generator_UserColumnName="VehicleDescription" msprop:Generator_ColumnPropNameInRow="VehicleDescription" msprop:Generator_ColumnVarNameInTable="columnVehicleDescription" msprop:Generator_ColumnPropNameInTable="VehicleDescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TyreBrand" msprop:Generator_UserColumnName="TyreBrand" msprop:Generator_ColumnPropNameInRow="TyreBrand" msprop:Generator_ColumnVarNameInTable="columnTyreBrand" msprop:Generator_ColumnPropNameInTable="TyreBrandColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="width" msprop:Generator_UserColumnName="width" msprop:Generator_ColumnPropNameInRow="width" msprop:Generator_ColumnVarNameInTable="columnwidth" msprop:Generator_ColumnPropNameInTable="widthColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="size" msprop:Generator_UserColumnName="size" msprop:Generator_ColumnPropNameInRow="size" msprop:Generator_ColumnVarNameInTable="columnsize" msprop:Generator_ColumnPropNameInTable="sizeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="material" msprop:Generator_UserColumnName="material" msprop:Generator_ColumnPropNameInRow="material" msprop:Generator_ColumnVarNameInTable="columnmaterial" msprop:Generator_ColumnPropNameInTable="materialColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rollingresistance" msprop:Generator_UserColumnName="rollingresistance" msprop:Generator_ColumnPropNameInRow="rollingresistance" msprop:Generator_ColumnVarNameInTable="columnrollingresistance" msprop:Generator_ColumnPropNameInTable="rollingresistanceColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="octane" msprop:Generator_UserColumnName="octane" msprop:Generator_ColumnPropNameInRow="octane" msprop:Generator_ColumnVarNameInTable="columnoctane" msprop:Generator_ColumnPropNameInTable="octaneColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PropellentBrand" msprop:Generator_UserColumnName="PropellentBrand" msprop:Generator_ColumnPropNameInRow="PropellentBrand" msprop:Generator_ColumnVarNameInTable="columnPropellentBrand" msprop:Generator_ColumnPropNameInTable="PropellentBrandColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PropellentDescription" msprop:Generator_UserColumnName="PropellentDescription" msprop:Generator_ColumnPropNameInRow="PropellentDescription" msprop:Generator_ColumnVarNameInTable="columnPropellentDescription" msprop:Generator_ColumnPropNameInTable="PropellentDescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TyreModel" msprop:Generator_UserColumnName="TyreModel" msprop:Generator_ColumnVarNameInTable="columnTyreModel" msprop:Generator_ColumnPropNameInRow="TyreModel" msprop:Generator_ColumnPropNameInTable="TyreModelColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tyretype" msprop:Generator_UserColumnName="tyretype" msprop:Generator_ColumnPropNameInRow="tyretype" msprop:Generator_ColumnVarNameInTable="columntyretype" msprop:Generator_ColumnPropNameInTable="tyretypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:viewCurrentConfiguration" />
+      <xs:field xpath="mstns:vehicleConfigurationID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
